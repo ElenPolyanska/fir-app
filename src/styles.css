@@ -1,0 +1,75 @@
+html,
+body {
+    height: 100%;
+    background: #e2e1e1;
+    letter-spacing: 2px;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+#sidebar {
+    background: linear-gradient(#918f8f, #070707);
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    #sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 180px;
+        height: 100%;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    #content {
+        margin-left: 180px;
+    }
+}
+
+.author {
+    font-size: .8rem;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #191b2e;
+}
+
+.modal {
+    max-width: 600px;
+    max-height: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 15px;
+    background: rgba(201, 198, 238, 0.952);
+}
+
+#mui-overlay {
+    background-color: rgba(2, 2, 2, 0.699);
+}
+
+.modal>h1 {
+    text-align: center;
+}
+
+.modal-content {
+    padding: 1rem;
+}
+
+.error {
+    color: red;
+}
